@@ -1,0 +1,300 @@
+/* Media queries para diseño responsive */
+
+/* Dispositivos móviles */
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .main-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-menu li {
+        margin: 0.5rem 0;
+    }
+
+    .producto {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .contacto-form {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+    }
+}
+
+/* Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .main-menu {
+        justify-content: space-around;
+    }
+
+    .producto {
+        width: 45%;
+        margin: 1rem;
+    }
+
+    .contacto-form {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* Estilos para el fondo oscuro y texto blanco */
+body {
+    background-color: #1a1a1a;
+    color:#1a1a1a
+}
+
+/* Ajustar color de texto en secciones específicas */
+.nosotros-contenido p,
+.producto p,
+.contacto-form label,
+#inicio p,
+#productos p,
+#novedades p {
+    color:#1a1a1a
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ca853f;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Encabezado */
+header {
+    background-color: #b38353;
+    color:#ccbaa8 ;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Navegación */
+nav {
+    background-color:#964B00 ;
+    padding: 0.5rem;
+}
+
+.main-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-menu li {
+    margin: 0 1rem;
+}
+
+.main-menu a {
+    color: #b88b5c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.main-menu a:hover {
+    color: #3498db;
+}
+
+/* Secciones */
+section {
+    padding: 2rem;
+    margin: 1rem 0;
+    background-color:#ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#inicio p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+#inicio h2{
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Productos */
+.producto {
+    border: 1px solid;
+    color: #333;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+.producto img {
+    max-width: 80%;
+    height: auto;
+    justify-content: center;
+
+}
+
+/*modificando las clases de los prodcutos pre-entreno y barritas*/
+
+.Barritas img{
+    width: 30%;
+    height: 30%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    max-width: 80%;
+    height: auto;
+    justify-content: center;
+    border: 1px solid ;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.pre-entreno img{
+    width: 30%;
+    height: 30%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    max-width: 80%;
+    height: auto;
+    justify-content: center;
+    border: 1px solid;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.Barritas:hover {
+    transform: translateY(-5px);
+}
+
+.pre-entreno:hover{
+    transform: translateY(-5px);
+}
+
+/* Formulario de contacto */
+
+h1{
+    text-align: center;
+}
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.btn-enviar {
+    background-color: #3498db;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #2980b9;
+}
+
+.medios-de-comunicacion {
+    margin-top: 2rem;
+}
+
+.medios-de-comunicacion ul {
+    dislay: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.medios-de-comunicacion a {
+    display: flex;
+    justify-content:isp center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #34495e;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.medios-de-comunicacion a:hover {
+    background-color:#964B00 ;
+}
+
+
+/* Pie de página */
+footer {
+    background-color:#964B00 ;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+
+    .main-menu li {
+        margin: 0.10 rem 0;
+    }
